@@ -1,5 +1,6 @@
 package com.provaautomacao.step_definition;
 
+import com.provaautomacao.tasks.EscolheProdutoTask;
 import com.provaautomacao.pageobjects.EscolheProdutoObject;
 import com.provaautomacao.utils.TestBase;
 import cucumber.api.java.en.Given;
@@ -22,7 +23,8 @@ public class ComprarProduto {
 
     @When("^Usuário escolhe um produto$")
     public void usuário_escolhe_um_produto(){
-        EscolheProdutoObject.clicarNoProduto();
+        EscolheProdutoTask obs = new EscolheProdutoTask();
+        obs.clicarBotao();
     }
 
     @Then("^É redirecionado para a página de descrição do produto$")
