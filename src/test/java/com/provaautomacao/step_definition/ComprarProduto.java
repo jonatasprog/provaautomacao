@@ -23,7 +23,7 @@ public class ComprarProduto {
 
     @When("^Usuário escolhe um produto$")
     public void usuário_escolhe_um_produto(){
-        EscolheProdutoTask obs = new EscolheProdutoTask();
+        EscolheProdutoTask obs = new EscolheProdutoTask(this.navegador);
         obs.clicarBotao();
     }
 
