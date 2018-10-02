@@ -7,9 +7,9 @@ import org.junit.runner.RunWith;
 
     @RunWith(Cucumber.class)
     @CucumberOptions(
-            features = "/src/test/java/com.provaautomacao/features/ComprarProduto.feature",
+            features = "src/test/java/com/provaautomacao/features/ComprarProduto.feature/",
             glue = {"steps"}
-            //format = {"pettry", "html:test-outout"}
+
     )
     public class TestRunner {
     }
