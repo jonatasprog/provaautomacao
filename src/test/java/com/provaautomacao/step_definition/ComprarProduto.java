@@ -1,34 +1,28 @@
-package com.provaautomacao.steps;
+package com.provaautomacao.step_definition;
 
+import com.provaautomacao.pageobjects.EscolheProdutoObject;
 import com.provaautomacao.utils.TestBase;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.concurrent.TimeUnit;
 
 public class ComprarProduto {
 
-    @Given("^Usuário está na Home Page$")
-    public static WebDriver createChrome() {
-        // Abrindo o navegador
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\jonat\\drivers\\chromedriver.exe");
-        WebDriver navegador = new ChromeDriver();
-        navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    private WebDriver navegador;
 
-        // Navegando para a página do Taskit!
-        navegador.get("http://www.juliodelima.com.br/taskit");
-
-        return navegador;
+    public void setUp(){
+        navegador = TestBase.createChrome();
     }
 
-
+    @Given("^Usuário está na Home Page$")
+    public void usuário_está_na_home_page(){
+    TestBase.createChrome();
+    }
 
     @When("^Usuário escolhe um produto$")
     public void usuário_escolhe_um_produto(){
-
+        EscolheProdutoObject.clicarNoProduto();
     }
 
     @Then("^É redirecionado para a página de descrição do produto$")

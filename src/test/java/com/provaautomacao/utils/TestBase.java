@@ -2,16 +2,19 @@ package com.provaautomacao.utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestBase {
 
-    public static void createChrome() {
+    public static WebDriver createChrome() {
 
-        WebDriver driver;
+        WebDriver navegador;
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\jonat\\drivers\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("http://www.automationpractice.com");
+        navegador = new ChromeDriver();
+        navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        navegador.manage().window().maximize();
+        navegador.get("http://www.automationpractice.com");
 
-
+        return navegador;
     }
 }
