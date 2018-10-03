@@ -5,7 +5,6 @@ Feature: ComprarProduto
     When Usuário escolhe um produto
     Then É redirecionado para a página de descrição do produto
 
-
   Scenario: Adicionar um produto no carrinho
     Given Usuário está na página de descrição de seu produto
     When Usuário adiciona seu produto no carrinho
