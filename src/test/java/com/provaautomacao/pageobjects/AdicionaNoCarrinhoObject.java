@@ -15,7 +15,7 @@ public class AdicionaNoCarrinhoObject {
 
     public WebElement getAddToCartButton (WebDriver navegador){
 
-        return  navegador.findElement(By.className("exclusive"));
+        return  navegador.findElement(By.name("Submit"));
 
     }
 

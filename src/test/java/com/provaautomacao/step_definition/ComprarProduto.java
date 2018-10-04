@@ -34,6 +34,7 @@ public class ComprarProduto {
     @Then("^É redirecionado para a página de descrição do produto$")
     public void é_redirecionado_para_a_página_de_descrição_do_produto(){
      AdicionaNoCarrinhoTask buttonAddToCart = new AdicionaNoCarrinhoTask(this.navegador);
+     //navegador.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
      buttonAddToCart.clicarBotao();
     }
 
