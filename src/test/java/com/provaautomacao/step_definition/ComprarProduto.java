@@ -1,5 +1,6 @@
 package com.provaautomacao.step_definition;
 
+import com.provaautomacao.tasks.AdicionaNoCarrinhoTask;
 import com.provaautomacao.tasks.EscolheProdutoTask;
 import com.provaautomacao.pageobjects.EscolheProdutoObject;
 import com.provaautomacao.utils.TestBase;
@@ -16,22 +17,24 @@ public class ComprarProduto {
 
     private WebDriver navegador;
 
+
+
     @Given("^Usuário está na Home Page$")
     public void usuário_está_na_home_page(){
-     this.navegador = TestBase.createChrome();
+     this.navegador = TestBase.createFirefox();
     }
 
     @When("^Usuário escolhe um produto$")
     public void usuário_escolhe_um_produto(){
-         EscolheProdutoTask elemento = new EscolheProdutoTask(this.navegador);
-         elemento.clicarImagem();
+        EscolheProdutoTask elemento = new EscolheProdutoTask(this.navegador);
+        elemento.clicarImagem();
          //navegador.findElement(By.linkText("Faded Short Sleeve T-shirts")).click();
-
     }
 
     @Then("^É redirecionado para a página de descrição do produto$")
     public void é_redirecionado_para_a_página_de_descrição_do_produto(){
-
+     AdicionaNoCarrinhoTask buttonAddToCart = new AdicionaNoCarrinhoTask(this.navegador);
+     buttonAddToCart.clicarBotao();
     }
 
     @Given("^Usuário está na página de descrição de seu produto$")

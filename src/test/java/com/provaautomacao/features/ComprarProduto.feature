@@ -12,6 +12,9 @@ Feature: ComprarProduto
 
   Scenario: Finalizar a compra do produto
     Given Usuário está na pagina de confirmação
+
+
+  And Usuário está na pagina de confirmação
     And Procede para o checkout
     When O usuário confirma o valor da compra
     Then O usuário finaliza a compra
