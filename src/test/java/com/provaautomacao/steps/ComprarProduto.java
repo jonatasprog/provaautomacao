@@ -1,13 +1,12 @@
-package com.provaautomacao.step_definition;
+package com.provaautomacao.steps;
 
 import com.provaautomacao.tasks.AdicionaNoCarrinhoTask;
 import com.provaautomacao.tasks.EscolheProdutoTask;
-import com.provaautomacao.pageobjects.EscolheProdutoObject;
 import com.provaautomacao.utils.TestBase;
+import com.provaautomacao.verificationpoints.PaginaDescricaoVerificationPoint;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -16,7 +15,6 @@ import java.util.concurrent.TimeUnit;
 public class ComprarProduto {
 
     private WebDriver navegador;
-
 
 
     @Given("^Usuário está na Home Page$")
@@ -28,18 +26,23 @@ public class ComprarProduto {
     public void usuário_escolhe_um_produto(){
         EscolheProdutoTask elemento = new EscolheProdutoTask(this.navegador);
         elemento.clicarImagem();
-         //navegador.findElement(By.linkText("Faded Short Sleeve T-shirts")).click();
     }
 
     @Then("^É redirecionado para a página de descrição do produto$")
     public void é_redirecionado_para_a_página_de_descrição_do_produto(){
-     AdicionaNoCarrinhoTask buttonAddToCart = new AdicionaNoCarrinhoTask(this.navegador);
-     //navegador.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-     buttonAddToCart.clicarBotao();
+        PaginaDescricaoVerificationPoint tituloDescricaoDoProduto = new PaginaDescricaoVerificationPoint(this.navegador);
+        tituloDescricaoDoProduto.getTitulo();
+        navegador.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        AdicionaNoCarrinhoTask buttonAddToCart = new AdicionaNoCarrinhoTask(this.navegador);
+        buttonAddToCart.clicarBotao();
+
     }
 
     @Given("^Usuário está na página de descrição de seu produto$")
     public void usuário_está_na_página_de_descrição_de_seu_produto(){
+      /*navegador.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        AdicionaNoCarrinhoTask buttonAddToCart = new AdicionaNoCarrinhoTask(this.navegador);
+        buttonAddToCart.clicarBotao();*/
 
     }
 
@@ -72,5 +75,4 @@ public class ComprarProduto {
     public void o_usuário_finaliza_a_compra(){
 
     }
-
 }

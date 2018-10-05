@@ -2,7 +2,6 @@ package com.provaautomacao.runner;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import org.junit.Before;
 import org.junit.runner.RunWith;
 
 
@@ -11,11 +10,9 @@ import org.junit.runner.RunWith;
         "html:target/HTML_REPORT_NAME"},
         features = "src/test/java/com/provaautomacao/features/ComprarProduto.feature/",
         glue = {""}
-
-
 )
+
 public class TestRunner {
-
-
-    }
+//faça aqui seus reports / @Before @After etc
+}
 

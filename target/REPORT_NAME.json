@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 20500025709,
+              "duration": 11344438683,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 1727852655,
+              "duration": 1525296551,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 265616436,
+              "duration": 31729361,
               "status": "passed"
             },
             "line": 6,
@@ -58,8 +58,9 @@
         "steps": [
           {
             "result": {
-              "duration": 84604,
-              "status": "passed"
+              "duration": 242507,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.provaautomacao.steps.ComprarProduto.usuário_está_na_página_de_descrição_de_seu_produto(ComprarProduto.java:43)\r\n\tat ✽.Given Usuário está na página de descrição de seu produto(src/test/java/com/provaautomacao/features/ComprarProduto.feature:9)\r\n",
+              "status": "failed"
             },
             "line": 9,
             "name": "Usuário está na página de descrição de seu produto",
@@ -70,8 +71,7 @@
           },
           {
             "result": {
-              "duration": 47407,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Usuário adiciona seu produto no carrinho",
@@ -82,8 +82,7 @@
           },
           {
             "result": {
-              "duration": 29539,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "O usuário vai para a página de confirmação de seu item no carrinho",
@@ -104,7 +103,7 @@
         "steps": [
           {
             "result": {
-              "duration": 103931,
+              "duration": 101379,
               "status": "passed"
             },
             "line": 14,
@@ -116,7 +115,7 @@
           },
           {
             "result": {
-              "duration": 30268,
+              "duration": 26256,
               "status": "passed"
             },
             "line": 15,
@@ -128,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 35738,
+              "duration": 39020,
               "status": "passed"
             },
             "line": 16,
@@ -140,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 30997,
+              "duration": 23339,
               "status": "passed"
             },
             "line": 17,
