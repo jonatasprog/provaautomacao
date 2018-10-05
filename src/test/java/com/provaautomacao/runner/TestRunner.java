@@ -15,4 +15,3 @@ import org.junit.runner.RunWith;
 public class TestRunner {
 //faça aqui seus reports / @Before @After etc
 }
-

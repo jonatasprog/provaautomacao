@@ -4,6 +4,7 @@ import com.provaautomacao.tasks.AdicionaNoCarrinhoTask;
 import com.provaautomacao.tasks.EscolheProdutoTask;
 import com.provaautomacao.utils.TestBase;
 import com.provaautomacao.verificationpoints.PaginaDescricaoVerificationPoint;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -14,7 +15,12 @@ import java.util.concurrent.TimeUnit;
 
 public class ComprarProduto {
 
-    private WebDriver navegador;
+    private static WebDriver navegador;
+
+    @Before
+    public void beforeCenario(){
+        System.out.println("This will run before the every Scenario");
+    }
 
 
     @Given("^Usuário está na Home Page$")
@@ -32,18 +38,13 @@ public class ComprarProduto {
     public void é_redirecionado_para_a_página_de_descrição_do_produto(){
         PaginaDescricaoVerificationPoint tituloDescricaoDoProduto = new PaginaDescricaoVerificationPoint(this.navegador);
         tituloDescricaoDoProduto.getTitulo();
-        navegador.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        AdicionaNoCarrinhoTask buttonAddToCart = new AdicionaNoCarrinhoTask(this.navegador);
-        buttonAddToCart.clicarBotao();
-
     }
 
     @Given("^Usuário está na página de descrição de seu produto$")
     public void usuário_está_na_página_de_descrição_de_seu_produto(){
-      /*navegador.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        AdicionaNoCarrinhoTask buttonAddToCart = new AdicionaNoCarrinhoTask(this.navegador);
-        buttonAddToCart.clicarBotao();*/
-
+      navegador.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+      AdicionaNoCarrinhoTask buttonAddToCart = new AdicionaNoCarrinhoTask(this.navegador);
+      buttonAddToCart.clicarBotao();
     }
 
     @When("^Usuário adiciona seu produto no carrinho$")

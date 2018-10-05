@@ -15,7 +15,3 @@ Feature: ComprarProduto
     And Procede para o checkout
     When O usuário confirma o valor da compra
     Then O usuário finaliza a compra
-
-
-
-

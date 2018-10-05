@@ -3,6 +3,17 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 284809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ComprarProduto.beforeCenario()"
+            }
+          }
+        ],
         "line": 3,
         "name": "Selecionar um produto na página",
         "description": "",
@@ -12,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11344438683,
+              "duration": 11305401664,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 1525296551,
+              "duration": 1603424560,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 31729361,
+              "duration": 21288444,
               "status": "passed"
             },
             "line": 6,
@@ -49,6 +60,17 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 61630,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ComprarProduto.beforeCenario()"
+            }
+          }
+        ],
         "line": 8,
         "name": "Adicionar um produto no carrinho",
         "description": "",
@@ -58,9 +80,8 @@
         "steps": [
           {
             "result": {
-              "duration": 242507,
-              "error_message": "java.lang.NullPointerException\r\n\tat com.provaautomacao.steps.ComprarProduto.usuário_está_na_página_de_descrição_de_seu_produto(ComprarProduto.java:43)\r\n\tat ✽.Given Usuário está na página de descrição de seu produto(src/test/java/com/provaautomacao/features/ComprarProduto.feature:9)\r\n",
-              "status": "failed"
+              "duration": 255535353,
+              "status": "passed"
             },
             "line": 9,
             "name": "Usuário está na página de descrição de seu produto",
@@ -71,7 +92,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 90438,
+              "status": "passed"
             },
             "line": 10,
             "name": "Usuário adiciona seu produto no carrinho",
@@ -82,7 +104,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 27715,
+              "status": "passed"
             },
             "line": 11,
             "name": "O usuário vai para a página de confirmação de seu item no carrinho",
@@ -94,6 +117,17 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 84604,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ComprarProduto.beforeCenario()"
+            }
+          }
+        ],
         "line": 13,
         "name": "Finalizar a compra do produto",
         "description": "",
@@ -103,7 +137,7 @@
         "steps": [
           {
             "result": {
-              "duration": 101379,
+              "duration": 25892,
               "status": "passed"
             },
             "line": 14,
@@ -115,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 26256,
+              "duration": 29538,
               "status": "passed"
             },
             "line": 15,
@@ -127,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 39020,
+              "duration": 28079,
               "status": "passed"
             },
             "line": 16,
@@ -139,7 +173,7 @@
           },
           {
             "result": {
-              "duration": 23339,
+              "duration": 24798,
               "status": "passed"
             },
             "line": 17,

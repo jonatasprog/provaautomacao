@@ -6,6 +6,10 @@ formatter.feature({
   "id": "comprarproduto",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 284809,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 3,
   "name": "Selecionar um produto na página",
@@ -33,21 +37,25 @@ formatter.match({
   "location": "ComprarProduto.usuário_está_na_home_page()"
 });
 formatter.result({
-  "duration": 11344438683,
+  "duration": 11305401664,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.usuário_escolhe_um_produto()"
 });
 formatter.result({
-  "duration": 1525296551,
+  "duration": 1603424560,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.é_redirecionado_para_a_página_de_descrição_do_produto()"
 });
 formatter.result({
-  "duration": 31729361,
+  "duration": 21288444,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 61630,
   "status": "passed"
 });
 formatter.scenario({
@@ -77,21 +85,26 @@ formatter.match({
   "location": "ComprarProduto.usuário_está_na_página_de_descrição_de_seu_produto()"
 });
 formatter.result({
-  "duration": 242507,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.provaautomacao.steps.ComprarProduto.usuário_está_na_página_de_descrição_de_seu_produto(ComprarProduto.java:43)\r\n\tat ✽.Given Usuário está na página de descrição de seu produto(src/test/java/com/provaautomacao/features/ComprarProduto.feature:9)\r\n",
-  "status": "failed"
+  "duration": 255535353,
+  "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.usuário_adiciona_seu_produto_no_carrinho()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 90438,
+  "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.o_usuário_vai_para_a_página_de_confirmação_de_seu_item_no_carrinho()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 27715,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 84604,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 13,
@@ -125,28 +138,28 @@ formatter.match({
   "location": "ComprarProduto.usuário_está_na_pagina_de_confirmação()"
 });
 formatter.result({
-  "duration": 101379,
+  "duration": 25892,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.procede_para_o_checkout()"
 });
 formatter.result({
-  "duration": 26256,
+  "duration": 29538,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.o_usuário_confirma_o_valor_da_compra()"
 });
 formatter.result({
-  "duration": 39020,
+  "duration": 28079,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.o_usuário_finaliza_a_compra()"
 });
 formatter.result({
-  "duration": 23339,
+  "duration": 24798,
   "status": "passed"
 });
 });

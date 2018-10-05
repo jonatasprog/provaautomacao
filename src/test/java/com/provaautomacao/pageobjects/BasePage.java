@@ -10,4 +10,3 @@ public class BasePage {
             this.navegador = navegador;
         }
     }
-

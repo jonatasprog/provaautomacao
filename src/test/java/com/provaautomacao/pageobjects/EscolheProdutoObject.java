@@ -21,6 +21,3 @@ public class EscolheProdutoObject extends BasePage {
     }
 
 }
-
-
-
