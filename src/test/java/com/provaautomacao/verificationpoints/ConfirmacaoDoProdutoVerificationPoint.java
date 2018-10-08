@@ -5,17 +5,17 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class PaginaDescricaoVerificationPoint extends BasePage {
+public class ConfirmacaoDoProdutoVerificationPoint extends BasePage {
 
-    public PaginaDescricaoVerificationPoint(WebDriver navegador) {
+    public ConfirmacaoDoProdutoVerificationPoint(WebDriver navegador) {
         super(navegador);
     }
 
     public String getTitulo() {
 
         String titulo;
-        titulo = navegador.findElement(By.xpath("//h3[contains(text(),'More info')]")).getText();
-        Assert.assertEquals(titulo, "MORE INFO");
+        titulo = navegador.findElement(By.linkText("Faded Short Sleeve T-shirts")).getText();
+        Assert.assertEquals(titulo, "Faded Short Sleeve T-shirts");
 
         return titulo;
     }

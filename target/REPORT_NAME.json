@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 284809,
+              "duration": 234120,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11305401664,
+              "duration": 11735443548,
               "status": "passed"
             },
             "line": 4,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 1603424560,
+              "duration": 93356,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 21288444,
+              "duration": 1586618486,
               "status": "passed"
             },
             "line": 6,
@@ -63,7 +63,7 @@
         "before": [
           {
             "result": {
-              "duration": 61630,
+              "duration": 107214,
               "status": "passed"
             },
             "match": {
@@ -80,7 +80,7 @@
         "steps": [
           {
             "result": {
-              "duration": 255535353,
+              "duration": 48997771,
               "status": "passed"
             },
             "line": 9,
@@ -92,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 90438,
+              "duration": 49231,
               "status": "passed"
             },
             "line": 10,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 27715,
+              "duration": 107495261,
               "status": "passed"
             },
             "line": 11,
@@ -120,7 +120,7 @@
         "before": [
           {
             "result": {
-              "duration": 84604,
+              "duration": 118884,
               "status": "passed"
             },
             "match": {
@@ -137,7 +137,7 @@
         "steps": [
           {
             "result": {
-              "duration": 25892,
+              "duration": 776461553,
               "status": "passed"
             },
             "line": 14,
@@ -149,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 29538,
+              "duration": 1415578666,
               "status": "passed"
             },
             "line": 15,
@@ -161,25 +161,25 @@
           },
           {
             "result": {
-              "duration": 28079,
+              "duration": 51800644,
               "status": "passed"
             },
             "line": 16,
-            "name": "O usuário confirma o valor da compra",
+            "name": "O usuário confirma o produto",
             "match": {
-              "location": "ComprarProduto.o_usuário_confirma_o_valor_da_compra()"
+              "location": "ComprarProduto.o_usuário_confirma_o_produto()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 24798,
+              "duration": 1737088586,
               "status": "passed"
             },
             "line": 17,
-            "name": "O usuário finaliza a compra",
+            "name": "O usuário finaliza a primeira etapa da compra",
             "match": {
-              "location": "ComprarProduto.o_usuário_finaliza_a_compra()"
+              "location": "ComprarProduto.o_usuário_finaliza_a_primeira_etapa_da_compra()"
             },
             "keyword": "Then "
           }

@@ -8,12 +8,12 @@ public class AdicionaNoCarrinhoObject extends BasePage {
 
 
     public AdicionaNoCarrinhoObject(WebDriver navegador) {
-    super(navegador);
+        super(navegador);
     }
 
-    public WebElement getAddToCartButton (WebDriver navegador){
+    public WebElement getAddToCartButton(WebDriver navegador) {
 
-        return  navegador.findElement(By.name("Submit"));
+        return navegador.findElement(By.name("Submit"));
     }
 
 }

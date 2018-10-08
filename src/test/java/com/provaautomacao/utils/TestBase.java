@@ -1,4 +1,5 @@
 package com.provaautomacao.utils;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,7 +21,8 @@ public class TestBase {
 
     public static WebDriver createFirefox() {
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\jonat\\drivers\\chromedriver.exe");
-        WebDriverManager.firefoxdriver().setup();;
+        WebDriverManager.firefoxdriver().setup();
+        ;
         WebDriver navegador = new FirefoxDriver();
         navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         navegador.manage().window().maximize();

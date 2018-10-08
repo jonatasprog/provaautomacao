@@ -13,6 +13,6 @@ public class AdicionaNoCarrinhoTask {
     }
 
     public void clicarBotao() {
-    this.buttonAddToCart.getAddToCartButton(navegador).click();
+        this.buttonAddToCart.getAddToCartButton(navegador).click();
     }
 }
