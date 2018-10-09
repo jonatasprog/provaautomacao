@@ -21,4 +21,3 @@ public class PaginaConfirmacaoVerificationPoint extends BasePageObject {
         return titulo;
     }
 }
-

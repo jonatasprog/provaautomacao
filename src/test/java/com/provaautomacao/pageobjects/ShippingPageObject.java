@@ -17,7 +17,6 @@ public class ShippingPageObject extends BasePageObject {
 
         return navegador.findElement(By.id("uniform-cgv"));
 
-
     }
 
     public WebElement getProceedToCheckout(WebDriver navegador) {

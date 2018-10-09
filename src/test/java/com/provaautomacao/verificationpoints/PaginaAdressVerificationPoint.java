@@ -20,4 +20,3 @@ public class PaginaAdressVerificationPoint extends BasePageObject {
         return titulo;
     }
 }
-

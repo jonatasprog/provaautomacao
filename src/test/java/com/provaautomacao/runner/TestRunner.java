@@ -13,5 +13,5 @@ import org.junit.runner.RunWith;
 )
 
 public class TestRunner {
-//Aqui vai meus reports! / @Before @After etc
+//Aqui pode ir meus reports! / @Before @After etc
 }

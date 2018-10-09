@@ -21,7 +21,7 @@ public class TestBase {
     }
 
     public static WebDriver createFirefox() {
-        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\jonat\\drivers\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\jonat\\drivers\\firefoxdriver.exe");
         WebDriverManager.firefoxdriver().setup();
         ;
         WebDriver navegador = new FirefoxDriver();

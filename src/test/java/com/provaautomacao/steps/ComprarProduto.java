@@ -2,10 +2,7 @@ package com.provaautomacao.steps;
 
 import com.provaautomacao.tasks.*;
 import com.provaautomacao.utils.TestBase;
-import com.provaautomacao.verificationpoints.ConfirmacaoDoProdutoVerificationPoint;
-import com.provaautomacao.verificationpoints.PaginaAdressVerificationPoint;
-import com.provaautomacao.verificationpoints.PaginaConfirmacaoVerificationPoint;
-import com.provaautomacao.verificationpoints.PaginaDescricaoVerificationPoint;
+import com.provaautomacao.verificationpoints.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -124,18 +121,22 @@ public class ComprarProduto {
 
     @And("^Usuário valida o total do valor de seu produto$")
     public void usuário_valida_o_total_do_valor_de_seu_produto() {
-
+        PaymentVerificationPoint total = new PaymentVerificationPoint(this.navegador);
+        total.getTotal();
     }
 
     @When("^Usuário seleciona um método de pagamento e prossegue$")
     public void usuário_seleciona_um_método_de_pagamento_e_prossegue() {
-
+        PaymentTask metodoDePagamento = new PaymentTask(this.navegador);
+        metodoDePagamento.clicarBotao();
     }
 
     @Then("^Usuário confere a finalização da sua compra$")
     public void usuário_confere_a_finalização_da_sua_compra() {
-
+        PaymentVerificationPoint totalAmount = new PaymentVerificationPoint(this.navegador);
+        totalAmount.getTotalAmount();
+        PaymentTask confirmarMinhaCompra = new PaymentTask(this.navegador);
+        confirmarMinhaCompra.clicarBotaoConfirmandoPagamento();
     }
-
 
 }

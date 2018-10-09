@@ -15,6 +15,5 @@ public class EscolheProdutoTask {
 
     public void clicarImagem() {
         this.produtoPageObject.imagemDoProduto(navegador).click();
-        //navegador.findElement(By.linkText("Faded Short Sleeve T-shirts")).click();
     }
 }

@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 219898,
+  "duration": 280798,
   "status": "passed"
 });
 formatter.scenario({
@@ -37,25 +37,25 @@ formatter.match({
   "location": "ComprarProduto.usuário_está_na_home_page()"
 });
 formatter.result({
-  "duration": 10844881784,
+  "duration": 11980108206,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.usuário_escolhe_um_produto()"
 });
 formatter.result({
-  "duration": 63817,
+  "duration": 123260,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.é_redirecionado_para_a_página_de_descrição_do_produto()"
 });
 formatter.result({
-  "duration": 1466250648,
+  "duration": 2703856340,
   "status": "passed"
 });
 formatter.before({
-  "duration": 61630,
+  "duration": 150245,
   "status": "passed"
 });
 formatter.scenario({
@@ -85,25 +85,25 @@ formatter.match({
   "location": "ComprarProduto.usuário_está_na_página_de_descrição_de_seu_produto()"
 });
 formatter.result({
-  "duration": 44122098,
+  "duration": 42497847,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.usuário_adiciona_seu_produto_no_carrinho()"
 });
 formatter.result({
-  "duration": 42302,
+  "duration": 64547,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.o_usuário_vai_para_a_página_de_confirmação_de_seu_item_no_carrinho()"
 });
 formatter.result({
-  "duration": 119482048,
+  "duration": 5122195941,
   "status": "passed"
 });
 formatter.before({
-  "duration": 114143,
+  "duration": 301220,
   "status": "passed"
 });
 formatter.scenario({
@@ -138,32 +138,32 @@ formatter.match({
   "location": "ComprarProduto.usuário_está_na_pagina_de_confirmação()"
 });
 formatter.result({
-  "duration": 767170790,
+  "duration": 1748958677,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.procede_para_o_checkout()"
 });
 formatter.result({
-  "duration": 1257738169,
+  "duration": 6558908477,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.o_usuário_confirma_o_produto()"
 });
 formatter.result({
-  "duration": 55243517,
+  "duration": 65719831,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.o_usuário_finaliza_a_primeira_etapa_da_compra()"
 });
 formatter.result({
-  "duration": 1757839914,
+  "duration": 1766469160,
   "status": "passed"
 });
 formatter.before({
-  "duration": 154256,
+  "duration": 184524,
   "status": "passed"
 });
 formatter.scenario({
@@ -193,25 +193,25 @@ formatter.match({
   "location": "ComprarProduto.usuario_cadastra_seu_email()"
 });
 formatter.result({
-  "duration": 174465554,
+  "duration": 182300544,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.usuario_confirma_seu_email()"
 });
 formatter.result({
-  "duration": 80094129,
+  "duration": 88474305,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.usuário_preenche_e_envia_formulario_de_cadastro()"
 });
 formatter.result({
-  "duration": 12254083057,
+  "duration": 12254888253,
   "status": "passed"
 });
 formatter.before({
-  "duration": 195464,
+  "duration": 143681,
   "status": "passed"
 });
 formatter.scenario({
@@ -251,35 +251,35 @@ formatter.match({
   "location": "ComprarProduto.usuário_valida_seus_dados_e_prossegue()"
 });
 formatter.result({
-  "duration": 917232092,
+  "duration": 1140148407,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.usuário_aceita_os_termos_de_serviço_e_prossegue()"
 });
 formatter.result({
-  "duration": 963049188,
+  "duration": 979744262,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.usuário_valida_o_total_do_valor_de_seu_produto()"
 });
 formatter.result({
-  "duration": 24433,
+  "duration": 39204124,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.usuário_seleciona_um_método_de_pagamento_e_prossegue()"
 });
 formatter.result({
-  "duration": 15316,
+  "duration": 963932790,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprarProduto.usuário_confere_a_finalização_da_sua_compra()"
 });
 formatter.result({
-  "duration": 14587,
+  "duration": 1999022677,
   "status": "passed"
 });
 });
