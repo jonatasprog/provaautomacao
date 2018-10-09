@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(format = {"json:target/REPORT_NAME.json", "pretty",
-        "html:target/HTML_REPORT_NAME"},
+        "html:target/HTML_REPORT_NAME","json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"},
         features = "src/test/java/com/provaautomacao/features/ComprarProduto.feature/",
         glue = {""}
 )
