@@ -1,5 +1,6 @@
 package com.provaautomacao.pageobjects;
 
+import com.provaautomacao.utils.BasePageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import java.util.concurrent.TimeUnit;
 
 
-public class EscolheProdutoObject extends BasePage {
+public class EscolheProdutoObject extends BasePageObject {
 
 
     public EscolheProdutoObject(WebDriver navegador) {

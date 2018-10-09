@@ -16,6 +16,7 @@ public class TestBase {
         navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         navegador.manage().window().maximize();
         navegador.get("http://www.automationpractice.com");
+
         return navegador;
     }
 

@@ -1,12 +1,12 @@
 package com.provaautomacao.verificationpoints;
 
-import com.provaautomacao.pageobjects.BasePage;
+import com.provaautomacao.utils.BasePageObject;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
-public class PaginaConfirmacaoVerificationPoint extends BasePage {
+public class PaginaConfirmacaoVerificationPoint extends BasePageObject {
 
     public PaginaConfirmacaoVerificationPoint(WebDriver navegador) {
         super(navegador);

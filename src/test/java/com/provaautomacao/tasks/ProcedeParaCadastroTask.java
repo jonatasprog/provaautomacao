@@ -3,11 +3,11 @@ package com.provaautomacao.tasks;
 import com.provaautomacao.pageobjects.ProcedeParaCadastroObject;
 import org.openqa.selenium.WebDriver;
 
-public class ProcedeParaCadastro {
+public class ProcedeParaCadastroTask {
     private WebDriver navegador;
     public ProcedeParaCadastroObject buttonProceedToCheckout;
 
-    public ProcedeParaCadastro(WebDriver navegador) {
+    public ProcedeParaCadastroTask(WebDriver navegador) {
         this.navegador = navegador;
         this.buttonProceedToCheckout = new ProcedeParaCadastroObject(navegador);
     }

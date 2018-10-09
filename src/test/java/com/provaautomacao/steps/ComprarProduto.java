@@ -1,11 +1,9 @@
 package com.provaautomacao.steps;
 
-import com.provaautomacao.tasks.AdicionaNoCarrinhoTask;
-import com.provaautomacao.tasks.EscolheProdutoTask;
-import com.provaautomacao.tasks.ProcedeParaCadastro;
-import com.provaautomacao.tasks.ProcedeParaCheckout;
+import com.provaautomacao.tasks.*;
 import com.provaautomacao.utils.TestBase;
 import com.provaautomacao.verificationpoints.ConfirmacaoDoProdutoVerificationPoint;
+import com.provaautomacao.verificationpoints.PaginaAdressVerificationPoint;
 import com.provaautomacao.verificationpoints.PaginaConfirmacaoVerificationPoint;
 import com.provaautomacao.verificationpoints.PaginaDescricaoVerificationPoint;
 import cucumber.api.java.Before;
@@ -13,9 +11,10 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class ComprarProduto {
@@ -73,7 +72,7 @@ public class ComprarProduto {
 
     @And("^Procede para o checkout$")
     public void procede_para_o_checkout() {
-        ProcedeParaCheckout buttonProceedToCheckout = new ProcedeParaCheckout(this.navegador);
+        ProcedeParaCheckoutTask buttonProceedToCheckout = new ProcedeParaCheckoutTask(this.navegador);
         buttonProceedToCheckout.clicarBotao();
     }
 
@@ -85,7 +84,58 @@ public class ComprarProduto {
 
     @Then("^O usuário finaliza a primeira etapa da compra$")
     public void o_usuário_finaliza_a_primeira_etapa_da_compra() {
-        ProcedeParaCadastro buttonProceedToCheckout2 = new ProcedeParaCadastro(this.navegador);
+        ProcedeParaCadastroTask buttonProceedToCheckout2 = new ProcedeParaCadastroTask(this.navegador);
         buttonProceedToCheckout2.clicarBotao();
     }
+
+    @Given("^Usuario cadastra seu email$")
+    public void usuario_cadastra_seu_email() {
+        SignInPageTask campoCadastraEmail = new SignInPageTask(this.navegador);
+        campoCadastraEmail.cadastrarEmail();
+    }
+
+    @And("^Usuario confirma seu email$")
+    public void usuario_confirma_seu_email() {
+        SignInPageTask submitCreateButton = new SignInPageTask(this.navegador);
+        submitCreateButton.clicarBotao();
+    }
+
+    @Then("^Usuário preenche e envia formulário de cadastro$")
+    public void usuário_preenche_e_envia_formulario_de_cadastro() {
+        SignInPageTask elementosDeCadastro = new SignInPageTask(this.navegador);
+        elementosDeCadastro.preencherFormulario();
+    }
+
+    @Given("^Usuário valida seus dados e prossegue$")
+    public void usuário_valida_seus_dados_e_prossegue() {
+        PaginaAdressVerificationPoint validarDados = new PaginaAdressVerificationPoint(this.navegador);
+        validarDados.getAdress();
+        PaginaAdressTask prosseguir = new PaginaAdressTask(this.navegador);
+        prosseguir.clicarBotao();
+    }
+
+    @And("^Usuário aceita os termos de serviço e prossegue$")
+    public void usuário_aceita_os_termos_de_serviço_e_prossegue() {
+        ShippingPageTask aceitarTermos = new ShippingPageTask(this.navegador);
+        aceitarTermos.marcarCheckBox();
+        ShippingPageTask buttonProceedToCheckout = new ShippingPageTask(this.navegador);
+        buttonProceedToCheckout.clicarBotao();
+    }
+
+    @And("^Usuário valida o total do valor de seu produto$")
+    public void usuário_valida_o_total_do_valor_de_seu_produto() {
+
+    }
+
+    @When("^Usuário seleciona um método de pagamento e prossegue$")
+    public void usuário_seleciona_um_método_de_pagamento_e_prossegue() {
+
+    }
+
+    @Then("^Usuário confere a finalização da sua compra$")
+    public void usuário_confere_a_finalização_da_sua_compra() {
+
+    }
+
+
 }

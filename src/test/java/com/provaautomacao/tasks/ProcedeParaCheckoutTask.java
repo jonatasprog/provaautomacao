@@ -3,11 +3,12 @@ package com.provaautomacao.tasks;
 import com.provaautomacao.pageobjects.ProcedeParaCheckoutObject;
 import org.openqa.selenium.WebDriver;
 
-public class ProcedeParaCheckout {
+public class ProcedeParaCheckoutTask {
+
     private WebDriver navegador;
     public ProcedeParaCheckoutObject buttonAddToCart;
 
-    public ProcedeParaCheckout(WebDriver navegador) {
+    public ProcedeParaCheckoutTask(WebDriver navegador) {
         this.navegador = navegador;
         this.buttonAddToCart = new ProcedeParaCheckoutObject(navegador);
     }

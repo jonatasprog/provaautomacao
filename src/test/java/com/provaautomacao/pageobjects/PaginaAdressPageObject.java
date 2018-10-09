@@ -5,14 +5,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ProcedeParaCheckoutObject extends BasePageObject {
 
-    public ProcedeParaCheckoutObject(WebDriver navegador) {
+public class PaginaAdressPageObject extends BasePageObject {
+
+    public PaginaAdressPageObject(WebDriver navegador) {
         super(navegador);
     }
 
     public WebElement getProceedToCheckout(WebDriver navegador) {
 
-        return navegador.findElement(By.linkText("Proceed to checkout"));
+        return this.navegador.findElement(By.name("processAddress"));
+
     }
+
+
 }
