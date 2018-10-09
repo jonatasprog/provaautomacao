@@ -8,14 +8,14 @@ Abra o InteliJ
 Clique em Import Project
 Identifique o caminho do projeto baixado
 
-Selecione import project from external model na tela de welcome ou dentro da IDE através do File > New > Project From Existing Sources. > escolha maven > selecione import Maven project automatically > next > ok > next > finish
+Selecione import project from external model na tela de welcome, ou dentro da IDE, através do File > New > Project From Existing Sources > selecione maven > selecione Import Maven project Automatically > next > ok > next > finish.
 
 Agora com a IDE aberta, siga pelos diretórios: src>test>java>com.provaautomacao>runner>TestRunner e execute o teste através dessa classe.
 
-*OBSERVE O COMPORTAMENTO E A UTILIZAÇÃO DO BDD NAS CLASSES DENTRO DOS PACOTES FEATURES (ComprarProduto.feature) E STEPS (ComprarProduto)
+*OBSERVE O COMPORTAMENTO E A UTILIZAÇÃO DO BDD NAS CLASSES DENTRO DOS PACOTES FEATURES (ComprarProduto.feature) E STEPS (ComprarProduto).
 
 
-*OBSERVE QUE OS OBJETOS SÃO MAPEADOS NAS CLASSES DO DIRETÓRIO "PAGEOBJECTS", SUAS AÇÕES E COMPORTAMENTOS SÃO EXECUTADOS NO "TASKS" 
+*OBSERVE QUE OS OBJETOS SÃO MAPEADOS NAS CLASSES DO DIRETÓRIO "PAGEOBJECTS", SUAS AÇÕES E COMPORTAMENTOS SÃO EXECUTADOS NO "TASKS", 
 E SUAS VALIDAÇÕES NO "VERIFICATIONPOINTS".
 
 
