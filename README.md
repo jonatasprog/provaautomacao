@@ -7,7 +7,8 @@ Baixe o projeto e descompacte
 Abra o InteliJ
 Clique em Import Project
 Identifique o caminho do projeto baixado
-Selecione import project from external model > escolha maven > selecione import Maven project automatically > next > ok > next > finish
+
+Selecione import project from external model na tela de welcome ou dentro da IDE através do File > New > Project From Existing Sources. > escolha maven > selecione import Maven project automatically > next > ok > next > finish
 
 Agora com a IDE aberta, siga pelos diretórios: src>test>java>com.provaautomacao>runner>TestRunner e execute o teste através dessa classe.
 
