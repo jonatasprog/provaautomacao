@@ -1,12 +1,14 @@
 # provaautomacao
 Estruturação de um projeto BDD em java com Cucumber.
-Guia de instalação
+
+Guia de instalação:
 
 Baixe o projeto e descompacte
 Abra o InteliJ
 Clique em Import Project
 Identifique o caminho do projeto baixado
 Selecione import project from external model > escolha maven > selecione import Maven project automatically > next > ok > next > finish
+
 Agora com a IDE aberta, siga pelos diretórios: src>test>java>com.provaautomacao>runner>TestRunner e execute o teste através dessa classe.
 
 *OBSERVE O COMPORTAMENTO E A UTILIZAÇÃO DO BDD NAS CLASSES DENTRO DOS PACOTES FEATURES (ComprarProduto.feature) E STEPS (ComprarProduto)
